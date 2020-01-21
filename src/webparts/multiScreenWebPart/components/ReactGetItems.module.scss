@@ -1,0 +1,85 @@
+.tableStyle{ 
+    display:  table ;
+    margin-left :  100px ;
+}
+.panelStyle{ 
+   background:  rgb(9, 70, 238) ;
+}
+
+
+
+.divStyle{
+background:  #eee ;
+padding:  20px ;
+margin:  20px ;
+}
+
+.headerCaptionStyle{
+    background:  #4B6978 ;
+    display:  table-row ;
+    border:  solid ;
+    text-align :  center ;
+    width :  420px ;
+    height :  30px ;
+    padding-top :  3px ;
+    color :  white ;
+    margin-left :  100px ;
+    display :  block ;
+}
+
+.headerStyle{
+background:  #4B6978 ;
+display:  table-row ;
+    border:  solid ;
+    text-align :  center ;
+    width :  100px ;
+    height :  30px ;
+    padding-top :  10px ;
+    color :  white ;
+}
+
+.tableCaptionStyle{
+background:#4B6978 ;
+display:  block ;
+font-size :  20px ;
+font-weight:  bold ;
+    border:  solid ;
+    text-align :  center ;
+    width :  650px ;
+    height :  30px ;
+    padding-top :  3px ;
+    border-radius:  25px ;
+    margin-left :  30px ;
+    margin-top :  20px ;
+    color:white;
+}
+
+
+.rowCaptionStyle{
+width :  600px ;
+display :   table-caption ;
+background:  #4B6978 ;
+text-align :  center ;
+padding:  20px ;
+font-size :  20px ;
+font-weight : bold ;
+color :  white ;
+}
+
+.rowStyle{
+display :   table-row ;
+background:  #eee ;
+padding:  20px ;
+margin:  20px ;
+font-weight : bold ;
+}
+
+.CellStyle{ 
+    display:  table-cell ;
+    border:  solid ;
+     border-color :  white ;
+    text-align :  center ;
+    width :  100px ;
+    height :  30px ;
+    padding-top :  10px ;         
+} 
