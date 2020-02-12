@@ -3,32 +3,35 @@
     margin-left :  100px ;
 }
 .panelStyle{ 
-   background:  rgb(9, 70, 238) ;
+   background:  rgb(114, 170, 207) ;
+}
+.test-custom{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
-
-
+.TabStyle{
+    background:rgb(231, 9, 9) ;
+}
 .divStyle{
-background:  #eee ;
+background:  rgb(113, 219, 223) ;
 padding:  20px ;
 margin:  20px ;
 }
 
 .headerCaptionStyle{
-    background:  #4B6978 ;
-    display:  table-row ;
+    background:  #0766D1 ;
+    display:  inherit ;
     border:  solid ;
-    text-align :  center ;
-    width :  420px ;
+    text-align :  left ;
     height :  30px ;
     padding-top :  3px ;
     color :  white ;
-    margin-left :  100px ;
     display :  block ;
 }
 
 .headerStyle{
-background:  #4B6978 ;
+background:  rgb(9, 75, 61) ;
 display:  table-row ;
     border:  solid ;
     text-align :  center ;
@@ -39,7 +42,7 @@ display:  table-row ;
 }
 
 .tableCaptionStyle{
-background:#4B6978 ;
+background:rgb(186, 226, 9) ;
 display:  block ;
 font-size :  20px ;
 font-weight:  bold ;

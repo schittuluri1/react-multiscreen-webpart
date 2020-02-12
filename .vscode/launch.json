@@ -1,15 +1,47 @@
-{
+/*{
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+        }
+    ]
+}*/
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+    {
+        "type": "chrome",
+        "url": "https://txhhs.sharepoint.com/sites/developer/_layouts/15/workbench.aspx",
+        "request": "attach",
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "webRoot": "${workspaceFolder}"
+    },
+        {
+            "name": "SPFx Local",
+            "type": "chrome",
+            "request": "launch",
+            "url": "https://txhhs.sharepoint.com/sites/developer/_layouts/15/workbench.aspx",
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///../../../src/*": "${webRoot}/src/*",
+                "webpack:///../../../../src/*": "${webRoot}/src/*",
+                "webpack:///../../../../../src/*": "${webRoot}/src/*"
+            },
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ]
         }
     ]
 }

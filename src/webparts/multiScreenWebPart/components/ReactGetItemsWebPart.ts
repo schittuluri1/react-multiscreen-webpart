@@ -2,27 +2,35 @@ import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
-  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
-
+} from '@microsoft/sp-property-pane';
+import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as strings from 'reactGetItemsStrings';
 import ReactGetItems from './ReactGetItems';
 import { IReactGetItemsProps } from './IReactGetItemsProps';
 
-export default class ReactGetItemsWebPart extends BaseClientSideWebPart<IReactGetItemsProps> {
+export interface IReactGetItemsWebPartProps {
+  description: string;
+}
 
+export default class ReactGetItemsWebPart extends BaseClientSideWebPart <IReactGetItemsWebPartProps> {
+  
   public render(): void {
-    const element: React.ReactElement<IReactGetItemsProps > = React.createElement(
+    console.log("render has run");
+    const element: React.ReactElement<IReactGetItemsProps> = React.createElement(
       ReactGetItems,
       {
-        description: this.properties.description,  
-        siteurl: this.context.pageContext.web.absoluteUrl
+        description: this.properties.description,
+        context: this.context,
       }
     );
-
+    
     ReactDom.render(element, this.domElement);
+  }
+
+  protected onDispose(): void {
+    ReactDom.unmountComponentAtNode(this.domElement);
   }
 
   protected get dataVersion(): Version {

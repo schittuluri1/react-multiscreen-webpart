@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'office-ui-fabric-react/lib/Button';
 import styles from './MultiScreen.module.scss';
+import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+
 
 export class Header extends React.Component<{}, {}> {
   public render(): React.ReactElement<{}> {
     return (
-      
       <div>
-        <Link to="/Home" ><Button>Home</Button></Link> -->
-        <Link to="/screen1" ><Button className="ms-bgColor-orangeLight--hover ms-Button ms-Button--primary"> Go to screen 1</Button></Link> -->
-        <Link to="/screen2" ><Button> Go to screen 2</Button></Link> -->
-        <Link to="/ReactGetItems" ><Button> Display List</Button></Link>
+        <Link to="/ReactGetItems" ><PrimaryButton className="ms-bgColor-orangeLight--hover ms-Button ms-Button--primary"> Display List</PrimaryButton></Link><i className="ms-Icon ms-Icon--CaretRight8" aria-hidden="true"></i>
+        <Link to="/Home" ><PrimaryButton className="ms-bgColor-orangeLight--hover ms-Button ms-Button--primary">Dashboard</PrimaryButton></Link> <i className="ms-Icon ms-Icon--CaretRight8" aria-hidden="true"></i>
+        <Link to="/screen2" ><PrimaryButton className="ms-bgColor-orangeLight--hover ms-Button ms-Button--primary">Approval Status/Responses</PrimaryButton></Link>
       </div>
     );
   }
