@@ -44,12 +44,10 @@ export default class ReactGetItems extends React.Component<IReactGetItemsProps, 
   public render(): React.ReactElement<IReactGetItemsProps> {
      return ( 
       <div className={styles.panelStyle} > 
-      <div className={styles.headerCaptionStyle}> ECER DISPLAY FORM</div>
+      <div className={styles.headerCaptionStyle}> </div>
        <Tabs>
           <TabList>
-            <Tab>General Information</Tab>
-            <Tab>Event Information</Tab>
-            <Tab>Date of Engagement</Tab>
+            
           </TabList>
           <TabPanel>
             <div className={styles.divStyle}>

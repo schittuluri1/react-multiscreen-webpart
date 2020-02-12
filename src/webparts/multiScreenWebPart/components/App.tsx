@@ -14,7 +14,7 @@ export class App extends React.Component<{}, {}> {
     return (
       <Router>
         <div>
-          <h2 className={styles["label-custom"]}>ECER Approval Custom Tracker</h2>
+          <h2 className={styles["label-custom"]}></h2>
 
           <Header />
 
